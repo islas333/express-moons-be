@@ -1,6 +1,5 @@
 import express from "express";
 import Parse from "parse/node";
-import { isNativeError } from "util/types";
 
 const APP_ID = "jVPRLJkCUpQpKHX6rYjcZs8OEUCHRQIpqICxQt1D";
 const JAVASCRIPT_KEY = "WywY1XSKm2D3qtQV7bexkQV6gAXeftHrEi7x4tvR";
@@ -22,6 +21,7 @@ app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 interface SmileCenter {
   Timetable: {
     saturday: string[];
@@ -142,6 +142,7 @@ interface centerType {
   Center_Type: string;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const getMoonsCenterType = async (): Promise<centerType[]> => {
   const allData = await getAllSmileCenters();
   for (const data of allData) {
@@ -155,6 +156,7 @@ interface zone {
   Center_Type: string;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const getMoonsZone = async (): Promise<zone[]> => {
   const allData = await getAllSmileCenters();
   for (const data of allData) {
@@ -191,6 +193,7 @@ interface allMoonsServices {
   };
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const getMoonsServicesAll = async (): Promise<allMoonsServices[]> => {
   const query = new Parse.Query("SmileCenters");
   // query.limit(10);
