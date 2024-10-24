@@ -10,7 +10,7 @@ Este proyecto es una API REST que permite gestionar los SmileCenters. Utiliza No
 
 1. Clona el repositorio:
    ```sh
-   git clone https://github.com/tu-usuario/smilecenters-api.git
+   git clone https://github.com/islas333/express-moons-be.git
    cd smilecenters-api
 
 ## Instalación

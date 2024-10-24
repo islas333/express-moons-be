@@ -18,17 +18,17 @@ export default [
   },
   ...compat.extends(
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
   ),
   {
     languageOptions: {
-			parser: tsParser,
+      parser: tsParser,
       ecmaVersion: "latest",
       sourceType: "module",
     },
     rules: {
       eqeqeq: ["error", "always"],
-			"no-empty-function": "error",
+      "no-empty-function": "error",
       "no-implicit-coercion": "error",
       "@typescript-eslint/no-explicit-any": "error",
       "@typescript-eslint/no-duplicate-enum-values": "error",
